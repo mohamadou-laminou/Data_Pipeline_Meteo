@@ -64,3 +64,71 @@ Interface de visualisation connectée directement à la base MySQL pour l'analys
 ```bash
 git clone https://github.com/mohamadou-laminou/Data_Pipeline_Meteo.git
 cd Data_Pipeline_Meteo
+
+
+---
+
+### 2. Configuration
+
+Créer un fichier `config.py` à la racine du projet (non inclus dans le dépôt par sécurité) pour définir vos clés :
+
+```python
+API_KEY = "VOTRE_CLE_OPENWEATHER"
+
+DB_HOST = "localhost"
+DB_USER = "root"
+DB_PASSWORD = "votre_mot_de_passe"
+DB_NAME = "projet_meteo"
+
+
+
+```markdown
+---
+
+### 3. Installation des dépendances
+
+```bash
+pip install -r requirements.txt
+
+```markdown
+---
+
+### 4. Lancement
+
+Exécutez le script pour initier la première collecte de données :
+
+```bash
+python main.py
+
+
+```markdown
+---
+
+### 5. Visualisation
+
+Ouvrez le fichier `Dashboard.pbix` avec Power BI et cliquez sur "Actualiser" pour charger les données depuis votre base MySQL locale.
+
+---
+
+## Pistes d'amélioration (Roadmap)
+
+Ce projet constitue une première version fonctionnelle. Les évolutions suivantes sont envisagées :
+
+- Conteneurisation : Migration vers Docker pour ne plus dépendre de l'environnement local.
+- Orchestration : Remplacement du planificateur Windows par un outil dédié comme Apache Airflow.
+- Alerting : Mise en place de notifications (Email / Discord) en cas de conditions météo extrêmes.
+
+---
+
+## Auteur
+
+Laminou Mohamadou  
+Étudiant Ingénieur à l'EPF Montpellier
+
+
+
+
+
+
+
+
