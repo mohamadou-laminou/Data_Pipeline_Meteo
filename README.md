@@ -38,7 +38,7 @@ Suivez ces étapes pour mettre en place le projet.
 ### 1. Cloner le Dépôt
 
 ```bash
-git clone https://github.com/hbadir-habinou/Data_Pipeline_Meteo.git
+git clone https://github.com/mohamadou-laminou/Data_Pipeline_Meteo.git
 cd Data_Pipeline_Meteo
 ```
 
